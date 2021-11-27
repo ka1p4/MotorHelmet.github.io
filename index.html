@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title> test relay</title>
+        <script src="https://chirimen.org/remote-connection/js/RelayServer.js"></script>
+        <script src="js/relayAccel.js"></script>
+    </head>
+
+    <body>
+        <button onclick="setRelay()"> setRelay </button>
+        <table border="1">
+            <tr>
+                <th> センサ </th>
+                <th> Value </th>
+                <th> 怖いか </th>
+            </tr>
+
+            <tr>
+                <td> Accelmotor </td>
+                <td id="valueAccel"> 0 </td>
+                <td id="scaryAccel"> x </td>
+            </tr>
+            <tr>
+                <td> sht30 </td>
+                <td id="valueSht30"> 0 </td>
+                <td> x </td>
+            </tr>
+            <tr>
+                <td> sht30 </td>
+                <td id="valueSht30"> 0 </td>
+                <td> x </td>
+            </tr>
+        </table>
+    </body>
+</html>
