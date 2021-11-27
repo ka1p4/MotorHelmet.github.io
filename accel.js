@@ -5,7 +5,7 @@ import {RelayServer} from "./RelayServer.js";
 const sleep = msec => new Promise(resolve => setTimeout(resolve, msec));
 
 
-const AccelMotorSend = "AccelMotorSend";
+const AccelMotor_From_RasPI = "AccelMotor_From_RasPI";
 
 main();
 
@@ -16,7 +16,7 @@ async function main() {
     await groveaccelerometer.init();
 
 	let relay = RelayServer("achex", "chirimenSocket" , nodeWebSocketLib, "https://chirimen.org");
-    let channel = await relay.subscribe(AccelMotorSend);
+    let channel = await relay.subscribe(AccelMotor_From_RasPI);
 
     for (;;) {
         try {
