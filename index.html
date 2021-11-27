@@ -6,32 +6,34 @@
         <title> Motor Helmet</title>
         <script src="https://chirimen.org/remote-connection/js/RelayServer.js"></script>
         <script src="js/relayAccel.js"></script>
+        <script src="js/relaySht30.js"></script>
+        <script src="js/relayMousture.js"></script>
     </head>
-
+    
     <body>
         <button onclick="setRelay()"> setRelay </button>
         <table border="1">
             <tr>
-                <th> センサ </th>
-                <th> Value </th>
-                <th> 怖いか </th>
+                <th>  </th>
+                <th> Accelmotor </th>
+                <th> sht30 </th>
             </tr>
-
+            
             <tr>
-                <td> Accelmotor </td>
+                <th> value </th>
                 <td id="valueAccel"> 0 </td>
-                <td id="scaryAccel"> x </td>
+                <td id="valueAccel"> 0 </td>
             </tr>
             <tr>
-                <td> sht30 </td>
-                <td id="valueSht30"> 0 </td>
-                <td> x </td>
+                <th> 怖いか </th>
+                <td id="scaryAccel"> X </td>
+                <td id="scarySht30"> X </td>
             </tr>
             <tr>
-                <td> sht30 </td>
-                <td id="valueSht30"> 0 </td>
-                <td> x </td>
+                <th> データ </th>
+                <td id="arrayAccel"> </td>
+                <td id="arraySht30"> </td>
             </tr>
         </table>
     </body>
-</html>
+    </html>
